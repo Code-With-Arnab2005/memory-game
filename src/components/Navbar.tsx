@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <nav className="w-full bg-gray-900 text-white py-4 shadow-lg sticky top-0">
@@ -11,6 +13,7 @@ export default function Navbar() {
           <a href="/" className="hover:text-white transition">Home</a>
           <a href="/about" className="hover:text-white transition">How to Play</a>
           <a href="/scores" className="hover:text-white transition">High Scores</a>
+          <Link href={'/profile'}><img src="/profile.png" width={30} height={10} className="rounded-full border-2"/></Link>
         </div>
 
         {/* Mobile Menu Icon (optional) */}
